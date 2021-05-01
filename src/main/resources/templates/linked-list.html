@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://thymeleaf.org">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Linked List | Dhruv</title>
+</head>
+
+<body bgcolor="#20BCE3"></body>
+
+<body>
+<h1>Linked Lists</h1>
+<p>My LinkedList Lab is below.</p>
+<p>Enter numbers from 0 to 100 into the fields to see what occurs!</p>
+
+<form th:action="@{linkedlist}">
+    <label>First Value</label>
+    <input type="number" min="2" max="100" th:name="val1" th:value="${val1}">
+
+    <label>Second Value</label>
+    <input type="number" min="2" max="100" th:name="val2" th:value="${val2}">
+
+    <label>Third Value</label>
+    <input type="number" min="2" max="100" th:name="val3" th:value="${val3}">
+
+    <label>Fourth Value</label>
+    <input type="number" min="2" max="100" th:name="val4" th:value="${val4}">
+
+    <label>Fifth Value</label>
+    <input type="number" min="2" max="100" th:name="val5" th:value="${val5}">
+
+    <label>Sixth Value</label>
+    <input type="number" min="2" max="100" th:name="val6" th:value="${val6}">
+
+    <input type="submit">
+</form>
+
+<p>Unsorted Array:</p>
+<p th:text="${unsorted}"></p>
+
+<p>Sorted Array:</p>
+<p th:text="${sorted}"></p>
+
+<p><b>Time Complexity:</b></p>
+<p>Best Case Scenario: O(n²)</p>
+<p>Worst Case Scenario: O(n)</p>
+
+</body>
+</html>
